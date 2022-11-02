@@ -59,12 +59,7 @@
 body {
   font-family: var(--ff-vietnam);
   background-color: var(--cultured);
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  scroll-behavior: smooth;
 }
 
 .container__header {
@@ -78,6 +73,34 @@ body {
   box-shadow: var(--shadow-3);
   padding: 1.2rem;
   z-index: 999999999;
+}
+
+.container__footer {
+  background-color: var(--white);
+  box-shadow: var(--shadow-3);
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 2rem;
+  height: 100px;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__menu li {
+  margin-left: 1rem;
+  list-style: none;
+}
+.footer__menu li a {
+  text-decoration: none;
+  color: var(--davys-gray);
+  font-size: var(--fs-6);
+  line-height: 1.7;
 }
 
 .header__logo h1 a {
@@ -142,7 +165,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 1330px;
+  max-width: 1250px;
+  width: 100%;
 }
 
 /* ############# Dashboard ############### */
@@ -151,10 +175,11 @@ body {
   position: relative;
   top: 80px;
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: auto;
+  padding-bottom: 100px;
 }
 
 .welcomeBoard__wrapper {
@@ -164,9 +189,10 @@ body {
 }
 
 .content__welcomeBoard {
-  width: 1200px;
+  /* width: 1200px; */
   top: 25px;
   position: relative;
+  margin-bottom: 5rem;
 }
 
 .content__welcomeBoard__HiUser {
@@ -452,7 +478,7 @@ body {
   flex: 1 auto;
   box-shadow: var(--shadow-1);
   border-radius: var(--radius-6);
-  flex: 1 33%;
+  flex: 1 auto;
 }
 .recentProject__date {
   display: flex;

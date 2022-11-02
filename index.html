@@ -25,377 +25,384 @@
     <title>Admin Dashboard with CSS</title>
   </head>
   <body>
-    <div class="container">
-      <header class="container__header">
-        <div class="header__content">
-          <div class="header__logo">
-            <h1><a href="#">Dashboard</a></h1>
-            <div></div>
+    <header class="container__header">
+      <div class="container header__content">
+        <div class="header__logo">
+          <h1><a href="#">Dashboard</a></h1>
+          <div></div>
+        </div>
+        <nav class="header__navLinks">
+          <span class="navLinks__linkName active">
+            <span class="material-symbols-rounded"> dashboard </span>
+            <a href="#">Home</a>
+          </span>
+          <span class="navLinks__linkName">
+            <span class="material-symbols-rounded"> folder </span>
+            <a href="#">Projects</a>
+          </span>
+          <span class="navLinks__linkName">
+            <span class="material-symbols-rounded"> list </span>
+            <a href="#">Tasks</a>
+          </span>
+          <span class="navLinks__linkName">
+            <span class="material-symbols-rounded"> bar_chart </span>
+            <a href="#">Reports</a>
+          </span>
+          <span class="navLinks__linkName">
+            <span class="material-symbols-rounded"> settings </span>
+            <a href="#">Settings</a>
+          </span>
+        </nav>
+        <div class="header__profile">
+          <span class="material-symbols-rounded"> notifications </span>
+          <img src="./images/avatar-2.jpg" />
+          <div class="profile__userName">
+            <p>Behnam Far</p>
+            <p>Admin</p>
           </div>
-          <nav class="header__navLinks">
-            <span class="navLinks__linkName active">
-              <span class="material-symbols-rounded"> dashboard </span>
-              <a href="#">Home</a>
-            </span>
-            <span class="navLinks__linkName">
-              <span class="material-symbols-rounded"> folder </span>
-              <a href="#">Projects</a>
-            </span>
-            <span class="navLinks__linkName">
-              <span class="material-symbols-rounded"> list </span>
-              <a href="#">Tasks</a>
-            </span>
-            <span class="navLinks__linkName">
-              <span class="material-symbols-rounded"> bar_chart </span>
-              <a href="#">Reports</a>
-            </span>
-            <span class="navLinks__linkName">
-              <span class="material-symbols-rounded"> settings </span>
-              <a href="#">Settings</a>
-            </span>
-          </nav>
-          <div class="header__profile">
-            <span class="material-symbols-rounded"> notifications </span>
-            <img src="./images/avatar-2.jpg" />
-            <div class="profile__userName">
-              <p>Behnam Far</p>
-              <p>Admin</p>
+        </div>
+      </div>
+    </header>
+    <main class="container__content">
+      <div class="container content__welcomeBoard">
+        <h2 class="content__welcomeBoard__HiUser">Hi Behnam</h2>
+        <p class="content__welcomeBoard__welcomeText">Welcome to Dashboard!</p>
+        <div class="welcomeBoard__wrapper">
+          <div class="welcomeBoard_profile">
+            <div class="profile__boxInfo">
+              <img src="./images/avatar-2.jpg" alt="profile image" />
+              <div class="boxInfo">
+                <p class="boxInfo__name">Behnam Far</p>
+                <p class="boxInfo__job">Frontend Developer</p>
+              </div>
+              <span class="material-symbols-rounded boxInfo__threeDot">
+                more_horiz
+              </span>
+            </div>
+            <div class="profile__contactInfo">
+              <div class="contactInfo__email">
+                <span class="material-symbols-rounded"> mail </span>
+                <span>abc@gmail.com</span>
+              </div>
+              <div class="contactInfo__phone">
+                <span class="material-symbols-rounded"> call </span>
+                <span>+01 123-456-789</span>
+              </div>
+            </div>
+            <div class="profile__projectInfo">
+              <div class="projectInfo__completion">
+                <div class="completion__text">
+                  <p>Project Completion</p>
+                  <p>85%</p>
+                </div>
+                <div class="completion__progressbar progress">
+                  <div class="progressbar progressbar--blueColor"></div>
+                </div>
+              </div>
+              <div class="projectInfo__progress">
+                <div class="overallRating__text">
+                  <p>Overall Rating</p>
+                  <p>7.5</p>
+                </div>
+                <div class="overallRating__progressbar">
+                  <div class="progressbar progressbar--coralColor"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="welcomeBoard_tasks">
+            <div class="welcomeBoard_tasks--task1">
+              <span class="material-symbols-rounded welcomeBoard_task1__icon">
+                task_alt
+              </span>
+              <div class="tasks__completed">
+                <p>21</p>
+                <p>Tasks Completed</p>
+              </div>
+            </div>
+            <div class="welcomeBoard_tasks--task2">
+              <span class="material-symbols-rounded welcomeBoard_task2__icon">
+                drive_file_rename_outline
+              </span>
+              <div class="tasks__completed">
+                <p>21</p>
+                <p>Tasks Inprogress</p>
+              </div>
+            </div>
+          </div>
+          <div class="welcomeBoard_revenue">
+            <div class="revenue__title">
+              <span>Revenue</span>
+              <span class="material-symbols-rounded revenue__title__threeDot">
+                more_horiz
+              </span>
+            </div>
+            <div class="revenue__price">
+              <p>$2,100</p>
+              <p>Last Week</p>
+            </div>
+            <div class="revenue__status">
+              <div class="revenue__status--trendingUp">
+                <span class="material-symbols-rounded"> trending_up </span>
+                <span class="trendingUp">
+                  <p class="trendingUp__percent">15%</p>
+                  <p class="trendingUp__text">Prev Week</p>
+                </span>
+              </div>
+              <div class="revenue__status--trendingDown">
+                <span class="material-symbols-rounded"> trending_down </span>
+                <span class="trendingDown">
+                  <p class="trendingDown__percent">10%</p>
+                  <span class="trendingDown__text">Prev Month</span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </header>
-      <main class="container__content">
-        <div class="content__welcomeBoard">
-          <h2 class="content__welcomeBoard__HiUser">Hi Behnam</h2>
-          <p class="content__welcomeBoard__welcomeText">
-            Welcome to Dashboard!
-          </p>
-          <div class="welcomeBoard__wrapper">
-            <div class="welcomeBoard_profile">
-              <div class="profile__boxInfo">
-                <img src="./images/avatar-2.jpg" alt="profile image" />
-                <div class="boxInfo">
-                  <p class="boxInfo__name">Behnam Far</p>
-                  <p class="boxInfo__job">Frontend Developer</p>
-                </div>
-                <span class="material-symbols-rounded boxInfo__threeDot">
-                  more_horiz
-                </span>
-              </div>
-              <div class="profile__contactInfo">
-                <div class="contactInfo__email">
-                  <span class="material-symbols-rounded"> mail </span>
-                  <span>abc@gmail.com</span>
-                </div>
-                <div class="contactInfo__phone">
-                  <span class="material-symbols-rounded"> call </span>
-                  <span>+01 123-456-789</span>
-                </div>
-              </div>
-              <div class="profile__projectInfo">
-                <div class="projectInfo__completion">
-                  <div class="completion__text">
-                    <p>Project Completion</p>
-                    <p>85%</p>
-                  </div>
-                  <div class="completion__progressbar progress">
-                    <div class="progressbar progressbar--blueColor"></div>
-                  </div>
-                </div>
-                <div class="projectInfo__progress">
-                  <div class="overallRating__text">
-                    <p>Overall Rating</p>
-                    <p>7.5</p>
-                  </div>
-                  <div class="overallRating__progressbar">
-                    <div class="progressbar progressbar--coralColor"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="welcomeBoard_tasks">
-              <div class="welcomeBoard_tasks--task1">
-                <span class="material-symbols-rounded welcomeBoard_task1__icon">
-                  task_alt
-                </span>
-                <div class="tasks__completed">
-                  <p>21</p>
-                  <p>Tasks Completed</p>
-                </div>
-              </div>
-              <div class="welcomeBoard_tasks--task2">
-                <span class="material-symbols-rounded welcomeBoard_task2__icon">
-                  drive_file_rename_outline
-                </span>
-                <div class="tasks__completed">
-                  <p>21</p>
-                  <p>Tasks Inprogress</p>
-                </div>
-              </div>
-            </div>
-            <div class="welcomeBoard_revenue">
-              <div class="revenue__title">
-                <span>Revenue</span>
-                <span class="material-symbols-rounded revenue__title__threeDot">
-                  more_horiz
-                </span>
-              </div>
-              <div class="revenue__price">
-                <p>$2,100</p>
-                <p>Last Week</p>
-              </div>
-              <div class="revenue__status">
-                <div class="revenue__status--trendingUp">
-                  <span class="material-symbols-rounded"> trending_up </span>
-                  <span class="trendingUp">
-                    <p class="trendingUp__percent">15%</p>
-                    <p class="trendingUp__text">Prev Week</p>
-                  </span>
-                </div>
-                <div class="revenue__status--trendingDown">
-                  <span class="material-symbols-rounded"> trending_down </span>
-                  <span class="trendingDown">
-                    <p class="trendingDown__percent">10%</p>
-                    <span class="trendingDown__text">Prev Month</span>
-                  </span>
-                </div>
-              </div>
-            </div>
+        <div class="recentProject__wrapper">
+          <div class="section__header">
+            <span class="section__title">Recent Projects</span>
+            <button class="section__viewAll">
+              View All
+              <span class="material-symbols-rounded"> arrow_forward </span>
+            </button>
           </div>
-          <div class="recentProject__wrapper">
-            <div class="section__header">
-              <span class="section__title">Recent Projects</span>
-              <button class="section__viewAll">
-                View All
-                <span class="material-symbols-rounded"> arrow_forward </span>
-              </button>
-            </div>
-            <div class="recentProject__cards">
-              <div class="card recentProject__cards--card1">
-                <div class="recentProject__date">
-                  <span>Apr 09, 2022</span>
-                  <button class="recentProject__button">
-                    <span class="material-symbols-rounded boxInfo__threeDot">
-                      more_horiz
-                    </span>
-                  </button>
+          <div class="recentProject__cards">
+            <div class="card recentProject__cards--card1">
+              <div class="recentProject__date">
+                <span>Apr 09, 2022</span>
+                <button class="recentProject__button">
+                  <span class="material-symbols-rounded boxInfo__threeDot">
+                    more_horiz
+                  </span>
+                </button>
+              </div>
+              <div class="recentProject__card__title">
+                <p class="recentProject__title">Shreyu - Design Updates</p>
+                <p class="recentProject__tag recentProject__tag--blueColor">
+                  Designing
+                </p>
+              </div>
+              <div class="recentProject__text">
+                <p>Update shreyu with modern and latest trends...</p>
+              </div>
+              <div class="projectInfo__completion mb">
+                <div class="completion__text">
+                  <p>Project Completion</p>
+                  <p>75%</p>
                 </div>
-                <div class="recentProject__card__title">
-                  <p class="recentProject__title">Shreyu - Design Updates</p>
-                  <p class="recentProject__tag recentProject__tag--blueColor">
-                    Designing
-                  </p>
-                </div>
-                <div class="recentProject__text">
-                  <p>Update shreyu with modern and latest trends...</p>
-                </div>
-                <div class="projectInfo__completion mb">
-                  <div class="completion__text">
-                    <p>Project Completion</p>
-                    <p>75%</p>
-                  </div>
-                  <div class="completion__progressbar">
-                    <div class="progressbar progressbar--greenColor"></div>
-                  </div>
-                </div>
-                <div class="recentProject__userImage">
-                  <img
-                    class="userImage__avatar"
-                    src="./images/avatar-1.jpg"
-                    alt="avatar-1"
-                  />
-                  <img
-                    class="userImage__avatar"
-                    src="./images/avatar-2.jpg"
-                    alt="avatar-2"
-                  />
+                <div class="completion__progressbar">
+                  <div class="progressbar progressbar--greenColor"></div>
                 </div>
               </div>
-              <div class="card recentProject__cards--card2">
-                <div class="recentProject__date">
-                  <span>Apr 09, 2022</span>
-                  <button class="recentProject__button">
-                    <span class="material-symbols-rounded boxInfo__threeDot">
-                      more_horiz
-                    </span>
-                  </button>
-                </div>
-                <div class="recentProject__card__title">
-                  <p class="recentProject__title">Prompt v2.0</p>
-                  <p class="recentProject__tag recentProject__tag--orangeColor">
-                    Planning
-                  </p>
-                </div>
-                <div class="recentProject__text">
-                  <p>Plan new features and functionality for prompt...</p>
-                </div>
-                <div class="projectInfo__completion mb">
-                  <div class="completion__text">
-                    <p>Project Completion</p>
-                    <p>50%</p>
-                  </div>
-                  <div class="completion__progressbar progress">
-                    <div class="progressbar progressbar--redColor"></div>
-                  </div>
-                </div>
-                <div class="recentProject__userImage">
-                  <img
-                    class="userImage__avatar"
-                    src="./images/avatar-1.jpg"
-                    alt="avatar-1"
-                  />
-                  <img
-                    class="userImage__avatar"
-                    src="./images/avatar-2.jpg"
-                    alt="avatar-2"
-                  />
-                </div>
-              </div>
-              <div class="card recentProject__cards--card3">
-                <div class="recentProject__date">
-                  <span>Apr 09, 2022</span>
-                  <button class="recentProject__button">
-                    <span class="material-symbols-rounded boxInfo__threeDot">
-                      more_horiz
-                    </span>
-                  </button>
-                </div>
-                <div class="recentProject__card__title">
-                  <p class="recentProject__title">Hyper React v4.0</p>
-                  <p class="recentProject__tag recentProject__tag--lightBlue">
-                    Development
-                  </p>
-                </div>
-                <div class="recentProject__text">
-                  <p>Update shreyu with modern and latest trends...</p>
-                </div>
-                <div class="projectInfo__completion mb">
-                  <div class="completion__text">
-                    <p>Project Completion</p>
-                    <p>60%</p>
-                  </div>
-                  <div class="completion__progressbar progress">
-                    <div class="progressbar progressbar--yellowColor"></div>
-                  </div>
-                </div>
-                <div class="recentProject__userImage">
-                  <img
-                    class="userImage__avatar"
-                    src="./images/avatar-1.jpg"
-                    alt="avatar-1"
-                  />
-                  <img
-                    class="userImage__avatar"
-                    src="./images/avatar-2.jpg"
-                    alt="avatar-2"
-                  />
-                </div>
+              <div class="recentProject__userImage">
+                <img
+                  class="userImage__avatar"
+                  src="./images/avatar-1.jpg"
+                  alt="avatar-1"
+                />
+                <img
+                  class="userImage__avatar"
+                  src="./images/avatar-2.jpg"
+                  alt="avatar-2"
+                />
               </div>
             </div>
-          </div>
-          <div class="tasks__wrapper">
-            <div class="section__header">
-              <span class="section__title">Tasks</span>
-              <button class="section__viewAll">
-                View All
-                <span class="material-symbols-rounded"> arrow_forward </span>
-              </button>
-            </div>
-            <div class="tasks__task tasks__task--task1">
-              <div class="task__left">
-                <input type="checkbox" name="draft" class="task-checkbox" />
-                <label class="task__label" for="draft">
-                  Draft the new contract document for sales team
-                </label>
+            <div class="card recentProject__cards--card2">
+              <div class="recentProject__date">
+                <span>Apr 09, 2022</span>
+                <button class="recentProject__button">
+                  <span class="material-symbols-rounded boxInfo__threeDot">
+                    more_horiz
+                  </span>
+                </button>
               </div>
-              <div class="task__middle">
-                <span class="tag tag--task1">Today 10pm</span>
+              <div class="recentProject__card__title">
+                <p class="recentProject__title">Prompt v2.0</p>
+                <p class="recentProject__tag recentProject__tag--orangeColor">
+                  Planning
+                </p>
               </div>
-              <div class="task__right">
-                <div class="task__list">
-                  <span class="material-symbols-rounded"> list </span>
-                  <span>3/7</span>
+              <div class="recentProject__text">
+                <p>Plan new features and functionality for prompt...</p>
+              </div>
+              <div class="projectInfo__completion mb">
+                <div class="completion__text">
+                  <p>Project Completion</p>
+                  <p>50%</p>
                 </div>
-                <div class="task__comment">
-                  <span class="material-symbols-rounded"> chat </span>
-                  <span>21</span>
+                <div class="completion__progressbar progress">
+                  <div class="progressbar progressbar--redColor"></div>
                 </div>
-                <span class="tag tag--high">High</span>
               </div>
-            </div>
-            <div class="tasks__task tasks__task--task2">
-              <div class="task__left">
-                <input type="checkbox" name="draft" />
-                <label class="task__label" for="draft">
-                  iOS App home page design
-                </label>
-              </div>
-              <div class="task__middle">
-                <span class="tag tag--task2">Today 5pm</span>
-              </div>
-              <div class="task__right">
-                <div class="task__list">
-                  <span class="material-symbols-rounded"> list </span>
-                  <span>3/7</span>
-                </div>
-                <div class="task__comment">
-                  <span class="material-symbols-rounded"> chat </span>
-                  <span>21</span>
-                </div>
-                <span class="tag tag--medium">Medium</span>
+              <div class="recentProject__userImage">
+                <img
+                  class="userImage__avatar"
+                  src="./images/avatar-1.jpg"
+                  alt="avatar-1"
+                />
+                <img
+                  class="userImage__avatar"
+                  src="./images/avatar-2.jpg"
+                  alt="avatar-2"
+                />
               </div>
             </div>
-            <div class="tasks__task tasks__task--task3">
-              <div class="task__left">
-                <input type="checkbox" name="draft" />
-                <label class="task__label" for="draft">
-                  Enable analytics tracking
-                </label>
+            <div class="card recentProject__cards--card3">
+              <div class="recentProject__date">
+                <span>Apr 09, 2022</span>
+                <button class="recentProject__button">
+                  <span class="material-symbols-rounded boxInfo__threeDot">
+                    more_horiz
+                  </span>
+                </button>
               </div>
-              <div class="task__middle">
-                <span class="tag tag--task3"> Tomorrow 5pm </span>
+              <div class="recentProject__card__title">
+                <p class="recentProject__title">Hyper React v4.0</p>
+                <p class="recentProject__tag recentProject__tag--lightBlue">
+                  Development
+                </p>
               </div>
-              <div class="task__right">
-                <div class="task__list">
-                  <span class="material-symbols-rounded"> list </span>
-                  <span>3/7</span>
+              <div class="recentProject__text">
+                <p>Update shreyu with modern and latest trends...</p>
+              </div>
+              <div class="projectInfo__completion mb">
+                <div class="completion__text">
+                  <p>Project Completion</p>
+                  <p>60%</p>
                 </div>
-                <div class="task__comment">
-                  <span class="material-symbols-rounded"> chat </span>
-                  <span>21</span>
+                <div class="completion__progressbar progress">
+                  <div class="progressbar progressbar--yellowColor"></div>
                 </div>
-                <span class="tag tag--medium">Medium</span>
               </div>
-            </div>
-            <div class="tasks__task tasks__task--task4">
-              <div class="task__left">
-                <input type="checkbox" name="draft" />
-                <label class="task__label" for="draft">
-                  Kanban board design
-                </label>
+              <div class="recentProject__userImage">
+                <img
+                  class="userImage__avatar"
+                  src="./images/avatar-1.jpg"
+                  alt="avatar-1"
+                />
+                <img
+                  class="userImage__avatar"
+                  src="./images/avatar-2.jpg"
+                  alt="avatar-2"
+                />
               </div>
-              <div class="task__middle">
-                <span class="tag tag--task4"> Sep 11, 3pm </span>
-              </div>
-              <div class="task__right">
-                <div class="task__list">
-                  <span class="material-symbols-rounded"> list </span>
-                  <span>3/7</span>
-                </div>
-                <div class="task__comment">
-                  <span class="material-symbols-rounded"> chat </span>
-                  <span>21</span>
-                </div>
-                <span class="tag tag--low">Low</span>
-              </div>
-            </div>
-            <div class="btn__wrapper">
-              <button class="btn__loadMore">Load More</button>
             </div>
           </div>
         </div>
-      </main>
-    </div>
+        <div class="tasks__wrapper">
+          <div class="section__header">
+            <span class="section__title">Tasks</span>
+            <button class="section__viewAll">
+              View All
+              <span class="material-symbols-rounded"> arrow_forward </span>
+            </button>
+          </div>
+          <div class="tasks__task tasks__task--task1">
+            <div class="task__left">
+              <input type="checkbox" name="draft" class="task-checkbox" />
+              <label class="task__label" for="draft">
+                Draft the new contract document for sales team
+              </label>
+            </div>
+            <div class="task__middle">
+              <span class="tag tag--task1">Today 10pm</span>
+            </div>
+            <div class="task__right">
+              <div class="task__list">
+                <span class="material-symbols-rounded"> list </span>
+                <span>3/7</span>
+              </div>
+              <div class="task__comment">
+                <span class="material-symbols-rounded"> chat </span>
+                <span>21</span>
+              </div>
+              <span class="tag tag--high">High</span>
+            </div>
+          </div>
+          <div class="tasks__task tasks__task--task2">
+            <div class="task__left">
+              <input type="checkbox" name="draft" />
+              <label class="task__label" for="draft">
+                iOS App home page design
+              </label>
+            </div>
+            <div class="task__middle">
+              <span class="tag tag--task2">Today 5pm</span>
+            </div>
+            <div class="task__right">
+              <div class="task__list">
+                <span class="material-symbols-rounded"> list </span>
+                <span>3/7</span>
+              </div>
+              <div class="task__comment">
+                <span class="material-symbols-rounded"> chat </span>
+                <span>21</span>
+              </div>
+              <span class="tag tag--medium">Medium</span>
+            </div>
+          </div>
+          <div class="tasks__task tasks__task--task3">
+            <div class="task__left">
+              <input type="checkbox" name="draft" />
+              <label class="task__label" for="draft">
+                Enable analytics tracking
+              </label>
+            </div>
+            <div class="task__middle">
+              <span class="tag tag--task3"> Tomorrow 5pm </span>
+            </div>
+            <div class="task__right">
+              <div class="task__list">
+                <span class="material-symbols-rounded"> list </span>
+                <span>3/7</span>
+              </div>
+              <div class="task__comment">
+                <span class="material-symbols-rounded"> chat </span>
+                <span>21</span>
+              </div>
+              <span class="tag tag--medium">Medium</span>
+            </div>
+          </div>
+          <div class="tasks__task tasks__task--task4">
+            <div class="task__left">
+              <input type="checkbox" name="draft" />
+              <label class="task__label" for="draft">
+                Kanban board design
+              </label>
+            </div>
+            <div class="task__middle">
+              <span class="tag tag--task4"> Sep 11, 3pm </span>
+            </div>
+            <div class="task__right">
+              <div class="task__list">
+                <span class="material-symbols-rounded"> list </span>
+                <span>3/7</span>
+              </div>
+              <div class="task__comment">
+                <span class="material-symbols-rounded"> chat </span>
+                <span>21</span>
+              </div>
+              <span class="tag tag--low">Low</span>
+            </div>
+          </div>
+          <div class="btn__wrapper">
+            <button class="btn__loadMore">Load More</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container__footer">
+      <ul class="footer__menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Developers</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      <span>© 2022 BehanmFarhadi. All Rights Reserved </span>
+    </footer>
 
     <script src="./scripts/script.js"></script>
   </body>
